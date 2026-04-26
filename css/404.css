@@ -1,0 +1,141 @@
+/* ===== 404 Page ===== */
+
+.not-found {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .not-found__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .not-found__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #21272A;
+  }
+  
+  .not-found__code {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 140px;
+    line-height: 1.11;
+    letter-spacing: -0.011em;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .not-found__text {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #21272A;
+  }
+  
+  .not-found__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px 16px;
+    background-color: var(--color-white);
+    border: 1px solid #767676;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .not-found__button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #000000;
+  }
+  
+  
+  /* ===== Планшет 900+ ===== */
+  @media (min-width: 900px) {
+    .not-found {
+      padding-top: 265px;
+      padding-bottom: 150px;
+    }
+    
+    .not-found__title {
+      font-size: 20px;
+    }
+    
+    .not-found__code {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 160px;
+    }
+    
+    .not-found__text {
+      margin-top: 20px;
+      font-size: 18px;
+      max-width: 586px;
+    }
+    
+    .not-found__button {
+      margin-top: 20px;
+      width: 586px;
+      padding: 18px 20px;
+      font-size: 18px;
+    }
+  }
+  
+  
+  /* ===== Десктоп 1440+ ===== */
+  @media (min-width: 1440px) {
+    .not-found {
+      padding-top: 144px;
+      padding-bottom: 144px;
+    }
+    
+    .not-found__title {
+      font-size: 28px;
+    }
+    
+    .not-found__code {
+      margin-top: 24px;
+      font-weight: 500;
+      font-size: 200px;
+    }
+    
+    .not-found__text {
+      margin-top: 24px;
+      font-weight: 500;
+      font-size: 24px;
+      max-width: 796px;
+    }
+    
+    .not-found__button {
+      margin-top: 44px;
+      width: 190px;
+      padding: 20px 24px;
+      font-size: 18px;
+    }
+  }
+  
+  
+  /* ===== Широкий 1900+ ===== */
+  @media (min-width: 1900px) {
+    /* Без изменений, как 1440 */
+  }

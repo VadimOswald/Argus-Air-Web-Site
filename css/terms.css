@@ -1,0 +1,224 @@
+/* ===== Terms of Use Page ===== */
+
+.terms {
+    padding-top: 32px;
+    padding-bottom: 84px;
+  }
+  
+  .terms__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.11;
+    letter-spacing: -0.011em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 32px;
+  }
+  
+  .terms__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .terms__section-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000005;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  
+  .terms__section:first-child .terms__section-heading {
+    margin-top: 0;
+  }
+  
+  .terms__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000005;
+    margin-bottom: 6px;
+  }
+  
+  .terms__subsection-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000005;
+    margin-bottom: 6px;
+  }
+  
+  .terms__indented {
+    padding-left: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .terms__list {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000005;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .terms__list li {
+    margin-bottom: 4px;
+  }
+  
+  .terms__date {
+    margin-top: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000005;
+  }
+  
+  .terms__requisites {
+    margin-top: 84px;
+  }
+  
+  .terms__requisites-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #000005;
+    margin-bottom: 8px;
+  }
+  
+  
+  /* ===== Планшет 900+ ===== */
+  @media (min-width: 900px) {
+    .terms {
+      padding-top: 84px;
+    }
+    
+    .terms__title {
+      font-size: 40px;
+      margin-bottom: 56px;
+    }
+    
+    .terms__content {
+      gap: 32px;
+    }
+    
+    .terms__section-heading {
+      font-size: 26px;
+      margin-bottom: 16px;
+      margin-top: 16px;
+    }
+    
+    .terms__section:first-child .terms__section-heading {
+      margin-top: 0;
+    }
+    
+    .terms__text {
+      font-size: 17px;
+    }
+    
+    .terms__subsection-label {
+      font-size: 17px;
+    }
+    
+    .terms__indented {
+      padding-left: 24px;
+    }
+    
+    .terms__list {
+      font-size: 17px;
+    }
+    
+    .terms__date {
+      margin-top: 48px;
+      font-size: 17px;
+    }
+    
+    .terms__requisites {
+      margin-top: 84px;
+    }
+    
+    .terms__requisites-title {
+      font-size: 17px;
+    }
+  }
+  
+  
+  /* ===== Десктоп 1440+ ===== */
+  @media (min-width: 1440px) {
+    .terms {
+      padding-top: 84px;
+      padding-bottom: 144px;
+    }
+    
+    .terms__title {
+      font-size: 56px;
+      margin-bottom: 56px;
+      max-width: 807px;
+    }
+    
+    .terms__content {
+      gap: 24px;
+    }
+    
+    .terms__section-heading {
+      font-size: 36px;
+      margin-top: 36px;
+      margin-bottom: 16px;
+    }
+    
+    .terms__section:first-child .terms__section-heading {
+      margin-top: 0;
+    }
+    
+    .terms__text {
+      font-size: 22px;
+      line-height: 1.3;
+    }
+    
+    .terms__subsection-label {
+      font-size: 22px;
+      line-height: 1.3;
+    }
+    
+    .terms__list {
+      font-size: 22px;
+      line-height: 1.3;
+    }
+    
+    .terms__date {
+      margin-top: 84px;
+      font-size: 22px;
+    }
+    
+    .terms__requisites-title {
+      font-size: 22px;
+    }
+  }
+  
+  
+  /* ===== Широкий 1900+ ===== */
+  @media (min-width: 1900px) {
+    .terms__title {
+      font-size: 56px;
+    }
+    
+    .terms__section-heading {
+      font-size: 36px;
+    }
+    
+    .terms__text,
+    .terms__subsection-label,
+    .terms__list,
+    .terms__date,
+    .terms__requisites-title {
+      font-size: 22px;
+    }
+  }

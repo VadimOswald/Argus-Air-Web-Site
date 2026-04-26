@@ -1,0 +1,75 @@
+/* ===== Variables ===== */
+:root {
+  /* Colors */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-family: 'Montserrat', sans-serif;
+
+  /* Containers */
+  --container-desktop: 1440px;
+  --container-tablet: 1280px;
+  --container-mobile-large: 724px;
+  --container-mobile: 328px;
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body {
+  font-family: var(--font-family);
+  color: rgba(0, 0, 0, 0.8);
+  background-color: var(--color-white);
+  line-height: 1.4;
+}
+
+img {
+ /* max-width: 100%; */
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1em;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}

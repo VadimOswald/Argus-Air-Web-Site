@@ -1,0 +1,1895 @@
+/* ============================================
+   PAGE 2 (second.html)
+   Hero Section - мобильная версия 360px
+   ============================================ */
+
+/* Hero секция для второй страницы */
+
+.page2-hero .hero__title-accent {
+    font-size: 1.2em; /* +8% от родительского */
+  }
+
+.page2-hero {
+    min-height: 604px;
+    background-image: url('../assets/images/page_2_hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-white);
+    padding-top: 330px;
+    padding-bottom: 40px;
+  }
+  
+  /* Заголовок — переопределяем под макет */
+  .page2-hero .hero__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.15;
+    letter-spacing: -0.011em;
+    text-align: left;
+    text-transform: none;
+    color: var(--color-white);
+    
+  }
+
+  /* Описание */
+  .page2-hero .hero__description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.011em;
+    opacity: 1;
+    color: var(--color-white);
+    margin-bottom: 16px;
+  }
+  
+  /* Кнопка */
+  .page2-hero .hero__button {
+    max-width: 328px;
+    border-color: var(--color-white);
+    color: var(--color-white);
+  }
+  
+  .page2-hero .hero__button:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  @media (min-width: 900px) {
+    .page2-hero {
+      min-height: 400px;
+      background-image: url('../assets/images/page_2_hero_900.png');
+      padding-top: 162px;
+      padding-bottom: 40px;
+    }
+  
+    /* Заголовок */
+    .page2-hero .hero__title {
+      font-size: 32px;
+      line-height: 1.1;
+      max-width: 700px;
+    }
+  
+    /* Описание */
+    .page2-hero .hero__description {
+      font-size: 20px;
+      line-height: 1.2;
+      max-width: 700px;
+    }
+  
+    /* Кнопка — ширина на весь контейнер */
+    .page2-hero .hero__button {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  /* ============================================
+   Hero Section - десктопная версия 1440px
+   ============================================ */
+
+   @media (min-width: 1440px) {
+    .page2-hero {
+      height: 800px;
+      background-image: url('../assets/images/page_2_hero_big.png');
+      padding-top: 500px;
+      padding-bottom: 40px;
+    }
+  
+    .page2-hero .hero__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      min-height: inherit;
+    }
+  
+    .page2-hero .hero__title {
+      font-size: 28px;
+      line-height: 1.15;
+      max-width: 900px;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  
+    .page2-hero .hero__description {
+      font-size: 20px;
+      line-height: 1.2;
+      max-width: 900px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  
+    .page2-hero .hero__button {
+      max-width: 250px;
+      width: auto;
+      margin-bottom: 300px;
+    
+    }
+  }
+  /* ============================================
+     Hero Section - широкий десктоп 1900px
+     ============================================ */
+  
+     @media (min-width: 1900px) {
+      .page2-hero {
+        min-height: 820px;
+        background-image: url('../assets/images/page_2_hero_big.png');
+        padding-top: 170px;
+        padding-bottom: 40px;
+      }
+    
+      .page2-hero .hero__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        min-height: inherit;
+      }
+    
+      .page2-hero .hero__title {
+        font-size: 40px;
+        line-height: 1.15;
+        max-width: 1440px;
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    
+      .page2-hero .hero__description {
+        font-size: 20px;
+        line-height: 1.2;
+
+        width: 1440px;
+        margin-bottom: 24px;
+      }
+    
+      .page2-hero .hero__button {
+        max-width: 250px;
+        width: auto;
+      }
+    }
+  /* ===== Features Section (360) ===== */
+
+
+.features__container {
+  position: relative;
+}
+
+/* вертикальная линия */
+.features__container::before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 16px;
+  width: 1px;
+  height: calc(100% - 70px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* список */
+.features__list {
+  list-style: none;
+  padding-left: 30px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* элемент */
+.features__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* маркер */
+.features__marker {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+
+  background-image: url('../assets/images/marker.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* текст */
+.features__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  color: #21272a;
+}
+
+@media (min-width: 900px) {
+
+
+
+  .features__container {
+    position: relative;
+  }
+
+  /* линия по контейнеру */
+  .features__container::before {
+    top: 90px;
+    left: 88px;
+    height: calc(100% - 90px);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* список → grid */
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-left: 0;
+    margin-left: 276px;
+    gap: 24px;
+  }
+
+    /* первая строка */
+    .features__row {
+      display: flex;
+      align-items: center;
+    }
+
+  /* элементы */
+  .features__item {
+    display: flex;
+    align-items: center;
+  }
+
+  /* порядок */
+  .features__item:nth-child(1) {
+    flex-direction: row-reverse;
+    gap: 24px;
+  }
+
+  .features__item:nth-child(2) {
+    margin-left: 24px;
+    flex-direction: row-reverse;
+    gap: 24px;
+  }
+
+  .features__item:nth-child(3) {
+    margin-left: 24px;
+  }
+  .features__item:nth-child(3) .features__marker {
+    display: none;
+  }
+
+
+  .features__item--last {
+    align-self: flex-end;
+    display: flex;
+    gap: 24px;
+  }
+
+  /* меняем порядок внутри только этого элемента */
+.features__item--last .features__marker {
+  order: 2;
+}
+
+.features__item--last .features__text {
+  order: 1;
+}
+
+
+  /* маркер справа от текста для 1-3 */
+  .features__item:nth-child(-n+3) {
+
+    display: inline-flex;
+  }
+
+
+
+    /* скрываем маркер у 3 элемента */
+    .features__item:nth-child(3) .features__marker {
+      display: none;
+    }
+
+    .features__text {
+      white-space: nowrap;
+
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+  .features {
+    height: auto;
+  }
+
+  .features__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* линия */
+  .features__container::before {
+    top: 105px;
+    left: 88px;
+    height: calc(100%);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* строка */
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    gap: 0;
+  }
+
+  /* элементы */
+  .features__item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  /* ВСЕ элементы одинаковые: текст -> маркер */
+  .features__item {
+    flex-direction: row;
+    gap: 34px;
+  }
+
+
+
+}
+
+
+.why-header {
+  position: relative;
+  width: 100%;
+}
+
+.why-header__container {
+  position: relative;
+}
+
+.why-header__container::before {
+  content: "";
+  position: absolute;
+  left: 88px; /* как в предыдущих секциях */
+  top: 0;
+  width: 1px;
+  height: 102%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.why-header__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: -0.011em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 1900px) {
+.features__container::before {
+  top: 105px;
+  left: 240px;
+  height: calc(100%);
+  background-color: rgba(0, 0, 0, 0.4);
+} }
+
+
+/*====заголовок ПОЧЕМУ ВЫБИРАЮТ НАС=====*/
+@media (min-width: 360px) {
+
+  .why-header {
+    height: 170px;
+
+  }
+
+  .why-header__container::before {
+    left: 16px; /* мобильная сетка */
+  }
+
+  .why-header__title {
+    font-size: 24px;
+    padding-top: 60px;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 900px) {
+
+  .why-header {
+    height: 135px;
+
+  }
+
+  .why-header__container::before {
+    left: 88px;
+  }
+
+  .why-header__title {
+    font-size: 32px;
+    padding-top: 60px;
+  }
+}
+@media (min-width: 1440px) {
+
+  .why-header {
+
+    margin-top: 105px;
+  }
+
+  .why-header__container::before {
+    left: 88px;
+  }
+
+  .why-header__title {
+    font-size: 56px;
+    margin-left: 64px;
+    max-width: 950px;
+  }
+}
+@media (min-width: 1900px) {
+
+  .why-header {
+    height: 135px;
+    margin-top: 105px;
+  }
+
+  .why-header__title {
+    font-size: 56px;
+    max-width: 1100px;
+  }
+  .why-header__container::before {
+    left: 240px;
+  }
+}
+
+
+/*=============МЕТРИКИ==========*/
+.metrics {
+  position: relative;
+}
+
+.metrics__container {
+  position: relative;
+}
+
+/* вертикальная линия системы */
+.metrics__container::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  width: 1px;
+  height: calc(100%);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* список карточек */
+.metrics__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 60px;
+  margin-left: 30px; /* как ты задаёшь по 360 */
+}
+
+/* карточка */
+.metrics__card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* вертикальный гэп внутри */
+}
+
+/* верхняя строка */
+.metrics__top {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+/* число */
+.metrics__value {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1;
+  color: #21272a;
+}
+
+/* единица */
+.metrics__unit {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #21272a;
+}
+
+/* текст */
+.metrics__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #21272a;
+  opacity: 0.7;
+}
+
+@media (min-width: 900px) {
+
+  /* блок */
+  .metrics {
+    position: relative;
+  }
+
+  .metrics__container {
+    position: relative;
+  }
+
+  /* линия остаётся сквозной */
+  .metrics__container::before {
+    content: "";
+    position: absolute;
+    left: 88px;
+    top: -2px;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  /* список = горизонтальный ряд */
+  .metrics__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 56px;
+    align-items: flex-start;
+  }
+
+  /* карточка */
+  .metrics__card {
+    width: 207px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* верхняя строка остаётся вертикальной логикой */
+  .metrics__top {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  /* число — увеличиваем акцент */
+  .metrics__value {
+    font-size: 84px; /* было 56 → теперь акцент */
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  /* единица */
+  .metrics__unit {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  /* текст */
+  .metrics__text {
+    font-size: 18px;
+    line-height: 1.4;
+    opacity: 0.7;
+  }
+}
+@media (min-width: 1440px) {
+
+  .metrics {
+    position: relative;
+  }
+
+  .metrics__container {
+    position: relative;
+    margin-top: 90px;
+  }
+
+  /* линия */
+  .metrics__container::before {
+    left: 88px;
+    top: -37px;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  /* список */
+  .metrics__list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding-top: 56px;
+    margin-left: 64px; /* первая карточка от линии */
+  }
+
+  /* карточка */
+  .metrics__card {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* верх */
+  .metrics__top {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  /* число */
+  .metrics__value {
+    font-size: 104px;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  /* единица */
+  .metrics__unit {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /* текст */
+  .metrics__text {
+    font-size: 20px;
+    line-height: 1.4;
+    opacity: 0.7;
+  }
+}
+@media (min-width: 1900px) {
+
+  .metrics__list {
+    gap: 43px;
+    margin-left: 64px;
+  }
+
+  .metrics__card {
+    width: 408px;
+  }
+
+  .metrics__container::before {
+    left: 240px;
+    top: -3px;
+  }
+
+  .metrics__container {
+    margin-top: 56px;
+  }
+
+   
+  /* всё остальное наследуется с 1440 */
+}
+
+
+/*====================УСЛУГИ=====================*/
+
+@media (min-width: 360px) {
+
+  /* HEADER */
+
+  .services__head {
+    display: block; /* ВАЖНО: теперь заголовок виден */
+  }
+
+  .services__head-image {
+    display: none; /* большая картинка скрыта */
+  }
+
+  .services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .services__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #21272a;
+    padding-top: 60px;
+    margin-bottom: 32px;
+  }
+
+  /* LIST */
+
+  .services__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  /* CARD */
+
+  .service-card {
+    width: 328px;
+    border: 1px solid rgba(198,198,198,1);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card__inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .service-card__title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #21272a;
+  }
+
+  .service-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .service-card__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .service-card__icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-card__icon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  .service-card__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #21272a;
+  }
+
+  .service-card__btn {
+    width: 288px;
+    height: 52px;
+    margin: 0 auto 20px auto;
+    border: 1px solid rgba(118,118,118,1);
+    background: transparent;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    cursor: pointer;
+  }
+
+  /* IMAGE CARD (ВАЖНО ДОБАВЛЕНО) */
+
+  .services__image-card {
+    width: 328px;
+    height: 378px;
+    margin: 12px auto 0;
+    order: 999;
+  }
+
+  .services__image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+}
+@media (min-width: 900px) {
+
+  /* HEADER */
+
+  .services__head {
+    display: block; /* заголовок остаётся */
+  }
+
+  .services__head-image {
+    display: none; /* большая картинка всё ещё скрыта */
+  }
+
+  .services__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .services__title {
+    font-size: 40px;
+  }
+
+  /* GRID */
+
+  .services__list {
+    display: grid;
+    grid-template-columns: repeat(2, 352px);
+    grid-template-rows: repeat(2, 377px);
+    gap: 20px;
+    justify-content: center;
+    align-content: start;
+  }
+
+  /* размеры */
+
+  .service-card,
+  .services__image-card {
+    width: 352px;
+    height: 377px;
+  }
+
+  .services__image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* порядок */
+
+  .service-card:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .services__image-card {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .service-card:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .service-card:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  /* карточка */
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    height: 377px;
+  }
+
+  .service-card__inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  /* текст */
+
+  .service-card__title {
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 20px;
+  }
+
+  .service-card__list {
+    padding-left: 32px;
+    padding-right: 20px;
+  }
+
+  /* кнопка */
+
+  .service-card__btn {
+    width: 312px;
+    margin-top: auto;
+    margin-bottom: 40px;
+  }
+
+}
+@media (min-width: 1440px) {
+
+  .services {
+    height: 880px;
+  }
+
+  .services__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+
+  /* HEAD становится flex */
+  .services__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 211px;
+    width: 100%;
+  }
+
+  .services__title {
+    font-size: 56px;
+    margin: 0;
+    max-width: 700px;
+  }
+
+  .services__head-image {
+    display: block;
+    width: 510px;
+    height: 273px;
+    flex-shrink: 0;
+  }
+
+  .services__head-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ВАЖНО: скрываем ТОЛЬКО на 1440+ */
+  .services__image-card {
+    display: none;
+  }
+
+  /* КАРТОЧКИ */
+
+  .services__list {
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  .service-card {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card__inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .service-card__title {
+    font-size: 30px;
+    padding: 40px 32px 0 32px;
+  }
+
+  .service-card__list {
+    padding: 0 32px;
+  }
+
+  .service-card__btn {
+    width: calc(100% - 64px);
+    margin: auto 32px 40px 32px;
+  }
+}
+@media (min-width: 1900px) {
+
+  .services__container {
+    max-width: 1900px;
+  }
+
+  .service-card {
+    width: 453px;
+    height: 400px; /* сохраняем */
+  }
+
+  .services__list {
+    gap: 40px;
+  }
+}
+
+
+
+/* ===== EACH SERVICE SECTION (360px) ===== */
+.each-service {
+  width: 100%;
+  min-height: 830px;
+  background-image: url('../assets/images/each_service_bg_360.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+}
+
+.each-service__overlay--360 {
+  top: 150px;
+  width: 336px;
+  height: 676px;
+  display: block; /* показываем на 360 */
+}
+
+.each-service__overlay--360 img {
+  width: 336px;
+  height: 676px;
+}
+
+.each-service__overlay--900,
+.each-service__overlay--1440,
+.each-service__overlay--1900 {
+  display: none;
+}
+
+.each-service__container {
+  position: relative;
+  width: 360px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 100%;
+}
+
+.each-service__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #21272a;
+  margin: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.each-service__graphic {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+}
+
+.each-service__labels {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.each-service__label {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  color: #21272a;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0;
+  z-index: 3;
+  white-space: normal; /* разрешаем перенос */
+}
+
+/* ===== ПОЗИЦИОНИРОВАНИЕ (360px) ===== */
+.label-1 {
+  top: 32px;
+  left: 75px;
+}
+
+.label-2 {
+  top: 158px;
+  left: 170px;
+}
+
+.label-3 {
+  top: 332px;
+  left: 170px;
+}
+
+.label-4 {
+  top: 492px;
+  left: 35px;
+}
+
+.label-5 {
+  top: 625px;
+  left: 24px;
+}
+
+.label-6 {
+  top: 688px;
+  left: 164px;
+}
+
+/* ===== ДОПОЛНИТЕЛЬНЫЙ СЛОЙ-ИЗОБРАЖЕНИЕ ПОВЕРХ ===== */
+.each-service__overlay {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+
+.each-service__overlay img {
+  display: block;
+  object-fit: contain;
+}
+
+
+/* ===== ПЛАНШЕТ (900px) ===== */
+@media (min-width: 900px) {
+
+  /* ===== СЛОЙ С КАРТИНКОЙ ДЛЯ 900px ===== */
+
+  .each-service__overlay--360 {
+    display: none;
+  }
+
+
+ .each-service__overlay--900 {
+    display: block;
+    top: 157px;
+    width: 725px;
+    height: 437px;
+  }
+
+  .each-service__overlay--900 img {
+    width: 100%;
+    height: 100%;
+  }
+
+/* Поднимаем тексты выше картинки */
+.each-service__label {
+  z-index: 2;
+}
+
+/* Заголовок тоже выше */
+.each-service__title {
+  z-index: 2;
+  position: relative;
+}
+
+  .each-service {
+    background-image: url('../assets/images/each_service_bg_900.png');
+    min-height: 600px; /* временно, позже уточните */
+  }
+
+  .each-service__container {
+    width: 900px;
+    padding: 0 88px;
+  }
+
+  .each-service__title {
+    font-size: 40px;
+    text-align: left; /* по центру */
+    width: 100%;
+    letter-spacing : -0.011em;
+  }
+
+  /* Сбрасываем старые позиции для 360 */
+  .each-service__label {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: none; /* убираем ограничение ширины */
+  
+    font-size: 18px;
+  }
+
+  /* ===== ПОЗИЦИОНИРОВАНИЕ ДЛЯ 900px ===== */
+  /* текст 1: слева 76, от верха 92 */
+  .label-1 {
+    top: 47px;
+    left: 75px;
+  }
+
+  /* текст 3: слева 431, от верха 92 */
+  .label-3 {
+    top: 48px;
+    left: 430px;
+  }
+
+  /* текст 6: слева 311, от верха 299 */
+  .label-6 {
+    top: 252px;
+    left: 311px;  
+  }
+
+  /* текст 2: слева 497, от верха 299 */
+  .label-2 {
+    top: 252px;
+    left: 499px;
+  }
+
+  /* текст 5: слева 250, от верха 504 */
+  .label-5 {
+    top: 451px;
+    left: 250px;
+    width: 200px;
+  }
+
+  /* текст 4: слева 470, от верха 504 */
+  .label-4 {
+    top: 451px;
+    left: 470px;
+  }
+}
+
+/* ===== ДЕСКТОП (1440px) — заглушка ===== */
+/* ===== ДЕСКТОП (1440px) ===== */
+@media (min-width: 1440px) {
+  /* Отключаем картинки для 360 и 900 */
+  .each-service__overlay--360,
+  .each-service__overlay--900 {
+    display: none !important;
+  }
+  
+  .each-service {
+    background-image: url('../assets/images/each_service_bg_1440.png');
+    min-height: 820px;
+  }
+  
+  .each-service__container {
+    width: 1440px;
+    padding: 0 80px;
+  }
+  
+  .each-service__title {
+    font-size: 56px;
+    line-height: 1.11;
+    letter-spacing: -0.011em;
+    width: 900px;
+    text-align: left;
+    margin: 0;
+    padding-top: 0;
+  }
+  
+  /* Базовое состояние — по центру на экранах шире 1440 */
+.each-service__overlay--1440 {
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  display: block;
+}
+
+/* Ровно на 1440px — конкретная позиция */
+@media (min-width: 1440px) and (max-width: 1439px) {
+  .each-service__overlay--1440 {
+    left: 700px;
+    transform: none;
+  }
+}
+
+
+  /* Поднимаем заголовок и тексты выше картинки */
+  .each-service__title {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .each-service__label {
+    z-index: 2;
+    font-weight: 500;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: none;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #21272A;
+  }
+  
+  /* ===== ПОЗИЦИОНИРОВАНИЕ ДЛЯ 1440px ===== */
+  .label-1 {
+    top: 88px;
+    left: 80px;
+  }
+  
+  .label-2 {
+    top: 294px;
+    left: 505px;
+  }
+  
+  .label-3 {
+    top: 88px;
+    left: 434px;
+  }
+  
+  .label-4 {
+    top: 510px;
+    left: 538px;
+    width: 365px;
+    white-space: normal; /* исправлено: wrap → normal */
+  }
+  
+  .label-5 {
+    top: 294px;
+    left: 873px;
+  }
+  
+  .label-6 {
+    top: 88px;
+    left: 828px;
+  }
+}
+
+/* ===== ШИРОКИЙ ДЕСКТОП (1900px) ===== */
+@media (min-width: 1900px) {
+  /* Отключаем все предыдущие оверлеи */
+  .each-service__overlay--360,
+  .each-service__overlay--900,
+  .each-service__overlay--1440 {
+    display: none !important;
+  }
+  
+  .each-service {
+    background-image: url('../assets/images/each_service_bg_1900.png');
+    min-height: 900px; /* при необходимости поправите */
+  }
+  
+  .each-service__container {
+    width: 1900px;
+    padding: 0 240px;
+  }
+  
+  .each-service__title {
+    width: 800px;
+  }
+  
+  /* ===== СЛОЙ С КАРТИНКОЙ ДЛЯ 1900px ===== */
+  .each-service__overlay--1900 {
+    position: absolute;
+    top: 310px; /* или поправите сами */
+    left: 880px;    /* или поправите сами */
+    width: auto;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+    display: block;
+  }
+  
+  .each-service__overlay--1900 img {
+    display: block;
+    max-width: none;
+    width: auto;
+    height: auto;
+  }
+  
+  /* Наследуем стили меток с 1440 */
+  .each-service__label {
+    font-weight: 500;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: none;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #21272A;
+    z-index: 2;
+  }
+  
+  /* Текст 4 с переносом */
+  .label-4 {
+    white-space: normal;
+    width: 365px;
+  }
+  
+  /* ===== ПОЗИЦИОНИРОВАНИЕ ДЛЯ 1900px (все left +160) ===== */
+  .label-1 {
+    top: 88px;
+    left: 80px; /* 80 + 160 */
+  }
+  
+  .label-2 {
+    top: 294px;
+    left: 505px; /* 505 + 160 */
+  }
+  
+  .label-3 {
+    top: 88px;
+    left: 434px; /* 434 + 160 */
+  }
+  
+  .label-4 {
+    top: 510px;
+    left: 538px; /* 538 + 160 */
+  }
+  
+  .label-5 {
+    top: 294px;
+    left: 873px; /* 873 + 160 */
+  }
+  
+  .label-6 {
+    top: 88px;
+    left: 828px; /* 828 + 160 */
+  }
+}
+
+
+/* ===== SPACER SECTION ===== */
+.spacer {
+  width: 100%;
+  height: 84px;
+}
+@media (min-width: 900px) {
+  .spacer {
+    height: 84px;
+  }
+}
+@media (min-width: 1440px) {
+  .spacer {
+    height: 123px;
+  }
+}
+@media (min-width: 1900px) {
+  .spacer {
+    height: 220px;
+  }
+}
+
+/* ===== WHY WE ARE MORE EXPENSIVE SECTION (360px) ===== */
+.expensive {
+  width: 100%;
+}
+
+.expensive__container {
+  width: 360px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.expensive__header {
+  padding-top: 84px; /* пустой отступ 84 сверху */
+}
+
+.expensive__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1; /* 18px line-height относительно 24px = 0.75, но вы указали 18px, используем exact */
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1d1e1e;
+  margin: 0;
+}
+
+.expensive__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000005;
+  margin: 0;
+  margin-top: 12px; /* отступ 12 от заголовка */
+}
+
+.expensive__image {
+  margin-top: 32px; /* отступ 32 от подзаголовка */
+  width: 328px;
+  height: 290px;
+}
+
+.expensive__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.expensive__cards {
+  margin-top: 32px; /* отступ 32 от изображения */
+}
+
+.expensive-card {
+  padding: 16px 0; /* padding 16 сверху и снизу */
+}
+
+.expensive-card__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #21272a;
+  margin: 0;
+  margin-bottom: 12px; /* небольшой отступ до текста */
+  padding-top: 16px;;
+}
+
+.expensive-card__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.34;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #21272a;
+  margin: 0;
+  padding-top: 16px;
+}
+
+.expensive__divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.expensive-card:first-of-type {
+  padding-top: 0;
+}
+
+
+
+/*========================*/
+/*====ПОЧЕМУ МЫ ДОРОЖЕ====*/
+/*========================*/
+@media (min-width: 360px) and (max-width: 899px) {
+
+  .expensive-table,
+  .expensive-table__row,
+  .expensive-table__cell {
+    display: block;
+  }
+
+  .expensive-table {
+    width: 100%;
+    margin-top: 0; 
+  }
+
+  .expensive-table__row {
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  /* Убираем двойные линии */
+  .expensive-table__row:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .expensive-table__row:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+
+  .expensive-table__cell {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .expensive-table__cell--title {
+    padding-right: 0;
+  }
+
+  .expensive-table__cell--text {
+    padding-top: 12px;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .expensive-table__title {
+    padding-top: 0;
+    font-weight: 500;
+  }
+
+  .expensive-table__text {
+    padding-bottom: 0;
+  }
+
+  .expensive-card {
+    display: none;
+  }
+}
+/* ===== WHY WE ARE MORE EXPENSIVE SECTION (900px) ===== */
+@media (min-width: 900px) {
+  .expensive {
+    width: 100%;
+  }
+  
+  .expensive__container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 88px;
+  }
+  
+  /* Верхний блок: заголовок + подзаголовок + изображение */
+  .expensive__header {
+    padding-top: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .expensive__header-content {
+    flex: 1;
+    
+  }
+  
+  .expensive__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1; /* 96px слишком много, оставлю 1, но вы поправите */
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1d1e1e;
+    margin: 0;
+    line-height: 96px;
+    margin-top: 32px;
+  }
+  
+  .expensive__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000005;
+    margin: 0;
+    width: 460px;
+
+  }
+  
+  .expensive__image {
+    position: absolute;
+    right: 0;
+    top: 84px;
+    width: 207px;
+    height: 326px;
+  }
+  
+  .expensive__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Таблица с карточками */
+  .expensive__cards {
+    margin-top: 56px; /* отступ 56 от верха блока */
+    width: 100%;
+  }
+  
+  /* Табличное представление */
+  .expensive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 250px;
+  }
+  
+  .expensive-table__row {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  
+  .expensive-table__row:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  
+  .expensive-table__cell {
+    padding: 0;
+    vertical-align: top;
+  }
+  
+  /* Ячейка с заголовком */
+  .expensive-table__cell--title {
+    width: auto;
+    padding-top: 32px; /* сверху 32 */
+    padding-right: 20px; /* отступ от текста */
+    
+  }
+  
+  /* Ячейка с текстом */
+  .expensive-table__cell--text {
+    width: 414px; /* фикс ширина 334 */
+    padding-top: 32px; /* сверху 32 */
+    padding-left: 32px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  
+  .expensive-table__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.18;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #21272a;
+    margin: 0;
+  }
+  
+  .expensive-table__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.34;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #21272a;
+    margin: 0;
+    padding-bottom: 32px;
+  }
+}
+
+/* ===== ИЗОБРАЖЕНИЕ ДЛЯ ДЕСКТОПА (скрыто на мобиле и планшете) ===== */
+.expensive__image-desktop {
+  display: none;
+}
+
+/* ===== WHY WE ARE MORE EXPENSIVE SECTION (1440px) ===== */
+@media (min-width: 1440px) {
+  .expensive__container {
+    width: 1440px;
+    padding: 0 80px;
+    position: relative;
+  }
+  
+  .expensive__header {
+    padding-top: 54px;
+  }
+  
+  .expensive__title {
+    font-size: 56px;
+    line-height: 1.11;
+    letter-spacing: -0.011em;
+    margin-top: 0;
+  }
+  
+  .expensive__subtitle {
+    margin-top: 24px;
+    font-size: 24px;
+    width: 1000px;
+  }
+  
+  .expensive__cards {
+    margin-top: 84px;
+    position: relative;  /* ← важно для позиционирования изображения */
+  }
+  
+  .expensive-table {
+    width: 950px;
+    margin-top: 0;
+  }
+  
+  .expensive-table__cell--title {
+    width: 360px;  /* фиксированная ширина для заголовков */
+    max-width: 360px;
+    padding-top: 32px;
+    padding-right: 90px;
+  }
+  
+  .expensive-table__cell--text {
+    width: 450px;
+    padding-top: 32px;
+    padding-left: 40px;
+  }
+  
+  .expensive__image-desktop {
+    display: block;
+    position: absolute;
+    right: 0;  /* привязано к .expensive__cards */
+    top: 140px;
+    width: 220px;
+    height: 676px;
+  }
+  
+  .expensive__image-desktop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .expensive__image {
+    display: none;
+  }
+}
+/* ===== WHY WE ARE MORE EXPENSIVE SECTION (1900px) ===== */
+@media (min-width: 1900px) {
+  .expensive__container {
+    width: 1900px;
+    padding: 0 240px;
+  }
+  
+  .expensive__header {
+    padding-top: 54px;
+  }
+  
+  .expensive__title {
+    font-size: 56px;
+  }
+  
+  .expensive__subtitle {
+    margin-top: 24px;
+    font-size: 24px;
+  }
+  
+  .expensive__cards {
+    margin-top: 84px;
+    position: relative;
+  }
+  
+  .expensive-table {
+    width: 1070px;
+    margin-top: 0;
+  }
+  
+  .expensive-table__cell--title {
+    padding-top: 32px;
+    padding-right: 40px;
+  }
+  
+  .expensive-table__cell--text {
+    width: 500px;
+    padding-top: 32px;
+    padding-left: 40px;
+  }
+  
+  .expensive__image-desktop {
+    top: 120px;
+    width: 207px;
+    height: 636px;
+  }
+}
+
+@media (min-width: 900px) {
+  .projects {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .consultation--second .consultation__form {
+    width: 730px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .steps__container {
+    padding-bottom: 84px;;
+  } }

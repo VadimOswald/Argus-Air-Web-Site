@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ARGUS AIR — Новости вентиляции и климатических систем</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- SEO -->
+  <meta name="description" content="Новости, статьи и кейсы ARGUS AIR о вентиляции, кондиционировании и климатических системах для домов и коммерческих объектов.">
+  <meta name="author" content="ARGUS AIR">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://yourdomain.com/news">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="ARGUS AIR">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="ARGUS AIR — Новости">
+  <meta property="og:description" content="Экспертные статьи и кейсы о вентиляции и климатических системах.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/news">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ARGUS AIR — Новости">
+  <meta name="twitter:description" content="Новости и статьи о вентиляции и климате">
+  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+
+  <!-- Mobile -->
+  <meta name="theme-color" content="#000000">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ARGUS AIR",
+    "url": "https://yourdomain.com",
+    "logo": "https://yourdomain.com/logo.png",
+    "description": "Проектирование и монтаж вентиляции и климатических систем",
+    "areaServed": "RU"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ARGUS AIR",
+    "url": "https://yourdomain.com"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "ARGUS AIR — Новости",
+    "url": "https://yourdomain.com/news",
+    "description": "Новости и статьи компании ARGUS AIR"
+  }
+  </script>
+</head>
+<body>
+
+  <header data-component="header">
+  </header>
+  
+    <main>
+        <section class="news">
+            <div class="container news__container">
+              
+              <!-- Шапка: заголовок + дропдауны -->
+              <div class="news__header">
+                <h1 class="news__title">Новости</h1>
+                
+                <div class="news__filters">
+                  <select class="news__select" name="year">
+                    <option value="" disabled selected>Все года</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                  </select>
+                  
+                  <select class="news__select news__select--month" name="month">
+                    <option value="" disabled selected>Все месяца</option>
+                    <option value="1">Январь</option>
+                    <option value="2">Февраль</option>
+                    <option value="3">Март</option>
+                    <option value="4">Апрель</option>
+                    <option value="5">Май</option>
+                    <option value="6">Июнь</option>
+                    <option value="7">Июль</option>
+                    <option value="8">Август</option>
+                    <option value="9">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                  </select>
+                </div>
+              </div>              
+              <!-- Подзаголовок -->
+              <p class="news__subtitle">
+                Экспертные статьи о том, как сделать вентиляцию и кондиционирование в вашем доме предсказуемыми, тихими и эффективными. Делаем сложное — простым
+              </p>              
+              <!-- Сетка карточек -->
+              <div class="news__grid">               
+                <!-- Карточка 1 -->
+                <article class="news-card">
+                  <picture>
+                    <source srcset="assets/images/news1_1440.png" media="(min-width: 1440px)">
+                    <source srcset="assets/images/news1_900.png" media="(min-width: 900px)">
+                    <img src="assets/images/news1.png" alt="Как выбрать канальный кондиционер" class="news-card__image">
+                  </picture>
+                  <h3 class="news-card__title">Как выбрать канальный кондиционер</h3>
+                  <p class="news-card__desc">Выбор канального кондиционера и на что обратить внимание при монтаже</p>
+                </article>                
+                <!-- Карточка 2 -->
+                <article class="news-card">
+                  <picture>
+                    <source srcset="assets/images/news2_1440.png" media="(min-width: 1440px)">
+                    <source srcset="assets/images/news2_900.png" media="(min-width: 900px)">
+                    <img src="assets/images/news2.png" alt="Как включить кондиционер на обогрев" class="news-card__image">
+                  </picture>
+                  <h3 class="news-card__title">Как включить кондиционер на обогрев</h3>
+                  <p class="news-card__desc">Как прогреться кондиционером в межсезонье и даже зимой</p>
+                </article>               
+                <!-- Карточка 3 -->
+                <article class="news-card">
+                  <picture>
+                    <source srcset="assets/images/news3_1440.png" media="(min-width: 1440px)">
+                    <source srcset="assets/images/news3_900.png" media="(min-width: 900px)">
+                    <img src="assets/images/news3.png" alt="Как правильно сделать вентиляцию в частном доме или квартире?" class="news-card__image">
+                  </picture>
+                  <h3 class="news-card__title">Как правильно сделать вентиляцию в частном доме или квартире?</h3>
+                  <p class="news-card__desc">Рассказываем, о том, как сделать вентиляцию у Вас дома правильно и без лишних затрат</p>
+                </article>               
+              </div>              
+              <!-- Ссылка "Все новости" -->
+              <div class="news__footer">
+                <a href="#" class="news__link">Все новости</a>
+              </div>
+            </div>
+        </section>
+<!--==============================================================-->
+        <section class="newsletter">
+            <div class="container newsletter__container">
+              <h2 class="newsletter__title">Следите за нашей рассылкой</h2>
+              <p class="newsletter__text">Подпишитесь на наши обновления</p>
+              
+              <form class="newsletter__form" action="handler.php" method="POST" autocomplete="on">
+                <input type="hidden" name="form_time" value="<?= time() ?>">
+                <input type="text" name="website" style="display:none">
+                <input type="email" name="email" placeholder="Email" class="newsletter__input" required>
+                <button type="submit" class="newsletter__button">Отправить</button>
+              </form>
+            </div>
+        </section>
+
+        <section class="news-more">
+          
+          <div class="container news-more__container">
+      
+            <!-- Первый ряд: карточки 1 и 2 -->
+            <div class="news-more__row news-more__row--top">
+              
+              <!-- Карточка 1 -->
+              <article class="news-card news-card--more">
+                <picture>
+                 <!--<source srcset="assets/images/news-more1_1900.png" media="(min-width: 1900px)">
+                  <source srcset="assets/images/news-more1_1440.png" media="(min-width: 1440px)">
+                  <source srcset="assets/images/news-more1.png" media="(min-width: 900px)"> -->
+                  <img src="assets/images/news-more1.png" alt="Более 95% объектов с системами от Argus Air работают без нареканий 5+ лет" class="news-card__image">
+                </picture>
+                <h3 class="news-card__title">Более 95% объектов с системами от Argus Air работают без нареканий 5+ лет — результаты внутреннего аудита</h3>
+                <p class="news-card__desc">По итогам внутреннего аудита 2024 года, проведённого компанией Argus Air, системы вентиляции и кондиционирования, установленные с 2019 по 2024...</p>
+              </article>
+              
+              <!-- Карточка 2 -->
+              <article class="news-card news-card--more">
+                <picture>
+                  <!--<source srcset="assets/images/news-more2_1900.png" media="(min-width: 1900px)">
+                  <source srcset="assets/images/news-more2_1440.png" media="(min-width: 1440px)">
+                  <source srcset="assets/images/news-more2_900.png" media="(min-width: 900px)">-->
+                  <img src="assets/images/news-more2.png" alt="Argus Air завершила монтаж в йога центре на улице Пушкина 24/5 в Москве" class="news-card__image">
+                </picture>
+                <h3 class="news-card__title">Argus Air завершила монтаж в йога центре на улице Пушкина 24/5 в Москве</h3>
+                <p class="news-card__desc">Специалисты Argus Air прошли сертификацию у европейских производителей климатического оборудования.</p>
+              </article>
+              
+            </div>
+            
+            <!-- Второй ряд: карточки 3, 4, 5 -->
+            <div class="news-more__row news-more__row--bottom">
+              
+              <!-- Карточка 3 -->
+              <article class="news-card news-card--more">
+                <picture>
+                  <!--<source srcset="assets/images/news-more3_1900.png" media="(min-width: 1900px)">
+                  <source srcset="assets/images/news-more3_1440.png" media="(min-width: 1440px)">
+                  <source srcset="assets/images/news-more3_900.png" media="(min-width: 900px)">-->
+                  <img src="assets/images/news-more3.png" alt="Более 95% объектов с системами от Argus Air работают без нареканий 5+ лет" class="news-card__image">
+                </picture>
+                <h3 class="news-card__title">Более 95% объектов с системами от Argus Air работают без нареканий 5+ лет</h3>
+                <p class="news-card__desc">По итогам внутреннего аудита 2024 года, проведённого компанией Argus Air...</p>
+              </article>
+              
+              <!-- Карточка 4 -->
+              <article class="news-card news-card--more">
+                <picture>
+                  <!--<source srcset="assets/images/news-more4_1900.png" media="(min-width: 1900px)">
+                  <source srcset="assets/images/news-more4_1440.png" media="(min-width: 1440px)">
+                  <source srcset="assets/images/news-more4_900.png" media="(min-width: 900px)">-->
+                  <img src="assets/images/news-more4.png" alt="Специалисты Argus Air прошли сертификацию у европейских производителей" class="news-card__image">
+                </picture>
+                <h3 class="news-card__title">Специалисты Argus Air прошли сертификацию у европейских производителей</h3>
+                <p class="news-card__desc">Специалисты Argus Air прошли сертификацию у европейских производителей климатического оборудования.</p>
+              </article>
+              
+              <!-- Карточка 5 -->
+              <article class="news-card news-card--more">
+                <picture>
+                  <!--<source srcset="assets/images/news-more5_1900.png" media="(min-width: 1900px)">
+                  <source srcset="assets/images/news-more5_1440.png" media="(min-width: 1440px)">
+                  <source srcset="assets/images/news-more5_900.png" media="(min-width: 900px)">-->
+                  <img src="assets/images/news-more5.png" alt="Argus Air внедряет технологии BIM-проектирования для повышения точности монтажа" class="news-card__image">
+                </picture>
+                <h3 class="news-card__title">Argus Air внедряет технологии BIM-проектирования для повышения точности монтажа</h3>
+                <p class="news-card__desc">С марта 2025 года компания Argus Air полностью перешла на BIM-технологии...</p>
+              </article>
+              
+            </div>
+            
+          </div>
+        </section>
+
+        <section class="consultation consultation--news">
+      
+          <div class="container consultation__inner">
+            <h2 class="consultation__title">Остались вопросы?</h2>
+            <div class="consultation__info">
+
+              <p class="consultation__text">Наши инженеры дадут бесплатную консультацию и помогут разобраться именно в вашей ситуации</p>
+            </div>
+            <form class="consultation__form" action="handler.php" method="POST">
+              <input type="hidden" name="form_time" value="<?= time() ?>">
+              <input type="text" name="website" style="display:none">
+              <input type="text" name="name" placeholder="Имя" class="consultation__input" required>
+              <input type="tel" name="phone" placeholder="Телефон" class="consultation__input" required>
+              <textarea name="question" placeholder="Ваш вопрос" class="consultation__textarea" rows="3" required></textarea>
+              <button type="submit" class="consultation__button">Получить консультацию</button>
+            </form>
+          </div>
+        </section>
+
+    </main>
+  
+    <footer data-component="footer">
+    </footer>
+
+    <!-- Попап 3: newsletter -->
+<div class="popup" id="popup3">
+  <div class="popup__overlay"></div>
+  <div class="popup__window popup__window--small">
+    <div class="popup__content">
+      <h2 class="popup__title">Подписка оформлена</h2>
+      <p class="popup__text">Теперь вы будете получать самые свежие новости от Argus Air. Благодарим, что выбираете нас.</p>
+      <button class="popup__button">Хорошо</button>
+    </div>
+  </div>
+</div>
+
+  
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+</html>

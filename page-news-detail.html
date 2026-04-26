@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости — ARGUS AIR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/news-detail.css">
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+
+  <header data-component="header">
+  </header>
+
+  <main>
+    <section class="news-detail">
+      <div class="container news-detail__container">
+        
+        <!-- Шапка: заголовок + дропдауны -->
+        <div class="news-detail__header">
+          <h1 class="news-detail__title">Новости</h1>
+          
+          <div class="news-detail__filters">
+            <select class="news-detail__select" name="year">
+              <option value="" disabled selected>Все года</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+            </select>
+            
+            <select class="news-detail__select news-detail__select--month" name="month">
+              <option value="" disabled selected>Все месяца</option>
+              <option value="1">Январь</option>
+              <option value="2">Февраль</option>
+              <option value="3">Март</option>
+              <option value="4">Апрель</option>
+              <option value="5">Май</option>
+              <option value="6">Июнь</option>
+              <option value="7">Июль</option>
+              <option value="8">Август</option>
+              <option value="9">Сентябрь</option>
+              <option value="10">Октябрь</option>
+              <option value="11">Ноябрь</option>
+              <option value="12">Декабрь</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Сетка карточек -->
+        <div class="news-detail__grid">
+          
+          <!-- Карточка 1 -->
+          <article class="news-detail-card">
+            <picture>
+              <!--<source srcset="assets/images/news-detail1_1900.png" media="(min-width: 1900px)">
+              <source srcset="assets/images/news-detail1_1440.png" media="(min-width: 1440px)">
+              <source srcset="assets/images/news-detail1_900.png" media="(min-width: 900px)">-->
+              <img src="assets/images/news-detail1.png" alt="Argus Air завершила монтаж" class="news-detail-card__image">
+            </picture>
+            <div class="news-detail-card__content">
+              <time class="news-detail-card__date" datetime="2025-03-24">24 марта 2025</time>
+              <h2 class="news-detail-card__title">Argus Air завершила монтаж интеллектуальной климатической системы в элитном жилом комплексе Москва-Сити</h2>
+              <p class="news-detail-card__desc">
+                <span class="news-detail-card__desc--full">Компания Argus Air завершила проектирование и монтаж комплексной системы климат-контроля в премиальном жилом комплексе «Башня Федерация» в Москва-Сити. Система объединяет приточно-вытяжную вентиляцию с рекуперацией тепла, канальное кондиционирование и интеллектуальное управление. Особенность проекта - полная интеграция в дизайн интерьеров площадью более 800 м² без видимых элементов. Работы выполнены за 3 месяца с соблюдением строгих акустических требований (уровень шума не превышает 25 дБ). Система позволяет поддерживать температуру +22°C ±0,5°C и влажность 45-50% в каждом помещении</span>
+                <span class="news-detail-card__desc--short">Компания Argus Air завершила проектирование и монтаж комплексной системы климат-контроля в премиальном жилом комплексе «Башня Федерация» в Москва-Сити. Система объединяет...</span>
+              </p>
+            </div>
+          </article>
+          
+          <!-- Карточка 2 -->
+          <article class="news-detail-card">
+            <picture>
+              <!--<source srcset="assets/images/news-detail2_1900.png" media="(min-width: 1900px)">
+              <source srcset="assets/images/news-detail2_1440.png" media="(min-width: 1440px)">
+              <source srcset="assets/images/news-detail2_900.png" media="(min-width: 900px)">-->
+              <img src="assets/images/news-detail2.png" alt="Результаты внутреннего аудита" class="news-detail-card__image">
+            </picture>
+            <div class="news-detail-card__content">
+              <time class="news-detail-card__date" datetime="2025-03-18">18 марта 2025</time>
+              <h2 class="news-detail-card__title">Более 95% объектов с системами от Argus Air работают без нареканий 5+ лет — результаты внутреннего аудита</h2>
+              <p class="news-detail-card__desc">
+                <span class="news-detail-card__desc--full">По итогам внутреннего аудита 2024 года, проведённого компанией Argus Air, системы вентиляции и кондиционирования, установленные с 2019 по 2024 год, демонстрируют 98,7% безотказной работы. Аудит охватил 47 частных домов, 12 коммерческих объектов и 8 бассейнов в Московской и Тверской областях. Ключевые показатели: средний срок службы до первого сервисного вмешательства - 4,2 года; уровень шума сохраняется на уровне 28-30 дБ; эффективность рекуперации тепла - 78-82%. Эти результаты стали возможны благодаря тщательному проектированию и использованию оборудования премиум-класса</span>
+                <span class="news-detail-card__desc--short">По итогам внутреннего аудита 2024 года, проведённого компанией Argus Air, системы вентиляции и кондиционирования, установленные с 2019 по 2024 год...</span>
+              </p>
+            </div>
+          </article>
+          
+          <!-- Карточка 3 -->
+          <article class="news-detail-card">
+            <picture>
+              <!--<source srcset="assets/images/news-detail3_1900.png" media="(min-width: 1900px)">
+              <source srcset="assets/images/news-detail3_1440.png" media="(min-width: 1440px)">
+              <source srcset="assets/images/news-detail3_900.png" media="(min-width: 900px)">-->
+              <img src="assets/images/news-detail3.png" alt="BIM-проектирование" class="news-detail-card__image">
+            </picture>
+            <div class="news-detail-card__content">
+              <time class="news-detail-card__date" datetime="2025-03-15">15 марта 2025</time>
+              <h2 class="news-detail-card__title">Argus Air внедряет технологии BIM-проектирования для повышения точности монтажа вентиляционных систем</h2>
+              <p class="news-detail-card__desc">
+                <span class="news-detail-card__desc--full">С марта 2025 года компания Argus Air полностью перешла на BIM-технологии (Building Information Modeling) для проектирования систем вентиляции и кондиционирования. Новый подход позволяет создавать цифровые двойки объектов с точностью до 1 см, что исключает ошибки при монтаже и конфликты с другими инженерными системами. Внедрение BIM сократило сроки проектирования на 30% и повысило точность расчёта воздухообмена. Первым проектом, реализованным по новой технологии, стал частный дом в поселке «Николино» площадью 340 м²</span>
+                <span class="news-detail-card__desc--short">С марта 2025 года компания Argus Air полностью перешла на BIM-технологии (Building Information Modeling) для проектирования систем вентиляции и кондиционирования. Новый подход позволяет создавать цифровые двойки...</span>
+              </p>
+            </div>
+          </article>
+          
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer data-component="footer">
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
+  
+</body>
+</html>

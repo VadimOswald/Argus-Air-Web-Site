@@ -1,0 +1,383 @@
+/* ===== FOOTER (360px) ===== */
+.footer {
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  /* Верхняя секция */
+  .footer__top {
+    width: 100%;
+  }
+  
+  .footer__top-container {
+    width: 360px;
+    margin: 0 auto;
+    padding: 64px 16px 0 16px;
+  }
+  
+  /* Нижняя секция */
+  .footer__bottom-container {
+    width: 360px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .footer__logo {
+    width: 50px;
+    height: 52px;
+    display: block;
+  }
+  
+  .footer__brand-text {
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #21272a;
+  }
+  
+  /* Линия */
+  .footer__divider {
+    width: 368px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 38px auto 48px auto;
+  }
+  
+  /* Контейнеры 2, 3, 4 */
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  
+  .footer__column-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #21272a;
+    margin: 0 0 12px 0;
+  }
+  
+  .footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__list li {
+    margin-bottom: 4px;
+  }
+  
+  .footer__list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .footer__list a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #21272a;
+    text-decoration: none;
+  }
+  
+  .footer__list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Контейнер 5: иконки + контакты */
+  .footer__social {
+    margin-top: 38px;
+    margin-bottom: 0;
+  }
+  
+  .footer__icons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .footer__icons img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .footer__contacts a,
+  .footer__contacts span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #21272a;
+    text-decoration: none;
+  }
+  
+  .footer__contacts a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Контейнер 6 */
+  .footer__copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #21272a;
+    padding-bottom: 32px;
+    margin-top: 32px;
+  }
+  
+  /* ===== АДАПТАЦИЯ ДЛЯ 900px ===== */
+  @media screen and (min-width: 900px) {
+    /* Верхний контейнер */
+    .footer__top-container {
+      width: 724px;
+      margin: 0 auto;
+      padding: 64px 0 0 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 38px;
+    }
+  
+    .footer__brand {
+      grid-column: 1 / 2;
+    }
+  
+    .footer__brand-text {
+      max-width: 540px;
+      white-space: nowrap;
+    }
+  
+    .footer__social {
+      grid-column: 2 / 3;
+      margin-top: 0;
+      text-align: right;
+      justify-self: end;
+    }
+  
+    .footer__icons {
+      justify-content: flex-end;
+    }
+  
+    /* Линия — теперь центрируется так же, как контейнеры */
+    .footer__divider {
+      width: 724px;
+      margin: 38px auto 48px auto;
+    }
+  
+    /* Нижний контейнер */
+    .footer__bottom-container {
+      width: 724px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  
+    /* Блок ссылок */
+    .footer__links {
+      display: grid;
+      grid-template-columns: repeat(3, 228px);
+      gap: 20px;
+      margin-bottom: 0;
+    }
+  
+    .footer__column {
+      width: 228px;
+    }
+  
+    /* Вторая линия */
+    .footer__bottom-container .footer__divider {
+      margin: 40px auto 0 auto;
+      width: 724px;
+    }
+  
+    /* Копирайт */
+    .footer__copyright {
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  /* Скрываем мобильный блок на десктопе и показываем на 360 */
+.footer__social-mobile {
+    display: block;
+    margin: 32px 0 24px 0; /* отступы до и после */
+  }
+  
+  /* Скрываем оригинальный блок соцсетей на 360 */
+  @media screen and (max-width: 899px) {
+    .footer__social {
+      display: none;
+    }
+  }
+  
+  /* На десктопе (900+) скрываем мобильный блок и показываем оригинальный */
+  @media screen and (min-width: 900px) {
+    .footer__social-mobile {
+      display: none;
+    }
+    
+    .footer__social {
+      display: block;
+    }
+  }
+
+/* ===== АДАПТАЦИЯ ДЛЯ 1440px ===== */
+@media screen and (min-width: 1440px) {
+    /* Общая высота футера */
+    .footer {
+      height: 385px;
+    }
+  
+    /* Верхняя секция: только логотип */
+    .footer__top-container {
+      width: 1280px; /* 1440 - 80*2 = 1280 */
+      padding: 60px 0 0 0; /* отступ сверху 60px */
+    }
+  
+    /* Убираем правую колонку с соцсетями из grid верхнего контейнера */
+    .footer__brand {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    /* Сброс отступа у текста, чтобы он был на одной линии с лого */
+    .footer__brand-text {
+      margin-top: 0;
+      white-space: nowrap;
+    }
+  
+    /* Скрываем соцсети из верхней части на 1440+ */
+    .footer__social {
+      display: none;
+    }
+  
+    /* Линия */
+    .footer__divider {
+      width: 1280px;
+      margin: 38px auto 38px auto; /* отступы вокруг линии 38px */
+    }
+  
+    /* Нижний контейнер */
+    .footer__bottom-container {
+      width: 1280px;
+      padding: 0;
+    }
+  
+    /* Превращаем родительский контейнер ссылок в flex-контейнер для выравнивания с соцсетями */
+    .footer__bottom-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  
+    /* Блок ссылок (первые 3 колонки) */
+    .footer__links {
+      display: grid;
+      grid-template-columns: repeat(3, 230px); /* ширина 230 */
+      gap: 40px; /* гэп 40 */
+      margin-bottom: 0;
+      flex: 1; /* занимает доступное пространство слева */
+    }
+  
+    /* Показываем мобильный блок соцсетей (но стилизуем его как десктопный правый блок) */
+    .footer__social-mobile {
+      display: block;
+      margin: 0; /* сброс мобильных отступов */
+      text-align: right;
+      width: auto;
+    }
+  
+    .footer__social-mobile .footer__icons {
+      justify-content: flex-end;
+    }
+  
+    .footer__social-mobile .footer__contacts {
+      text-align: right;
+    }
+  
+    /* Линия внутри нижнего контейнера */
+    .footer__bottom-container .footer__divider {
+      width: 100%;
+      margin: 38px 0 0 0; /* 38px до линии */
+      flex-basis: 100%;
+    }
+  
+    /* Копирайт */
+    .footer__copyright {
+      flex-basis: 100%;
+      text-align: left;
+      margin-top: 38px; /* 38px от линии до текста */
+      padding-bottom: 40px;
+    }
+  
+    /* Сброс ширины колонок для соответствия новой сетке */
+    .footer__column {
+      width: 230px;
+    }
+  }
+  
+  /* ===== АДАПТАЦИЯ ДЛЯ 1900px ===== */
+  @media screen and (min-width: 1900px) {
+    .footer {
+      height: 385px;
+    }
+  
+    .footer__top-container {
+      width: 1420px; /* 1900 - 240*2 = 1420 */
+      padding: 90px 0 0 0;
+    }
+  
+    /* Наследуем flex-выравнивание от 1440 */
+    .footer__brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .footer__brand-text {
+      margin-top: 0;
+      white-space: nowrap;
+    }
+  
+    .footer__divider {
+      width: 1420px;
+      margin: 38px auto 38px auto;
+    }
+  
+    .footer__bottom-container {
+      width: 1420px;
+    }
+  
+    /* Блок ссылок (первые 3 колонки) */
+    .footer__links {
+      grid-template-columns: repeat(3, 330px); /* ширина 330 */
+      gap: 40px; /* гэп 40 */
+    }
+  
+    .footer__column {
+      width: 330px;
+    }
+  
+    /* Линия и копирайт наследуются от 1440, просто становятся шире за счет контейнера */
+    .footer__bottom-container .footer__divider {
+      margin: 38px 0 0 0;
+    }
+  
+    .footer__copyright {
+      margin-top: 38px;
+    }
+  }
